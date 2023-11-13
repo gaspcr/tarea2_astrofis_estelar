@@ -11,3 +11,8 @@ f_t = lambda_ * exp(-lambda_ * t)
 integral_result = integrate(f_t, (t, 0, oo))
 
 print(f'Integral result: {integral_result}')
+
+# Calculando el tiempo medio <t>
+t_mean = integrate(t * f_t, (t, 0, oo))
+
+print(f'Integral result: {t_mean}')
